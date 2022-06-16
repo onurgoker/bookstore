@@ -1,0 +1,529 @@
+{
+    "info": {
+        "_postman_id": "a699a347-ee25-4d20-a537-da2214456204",
+        "name": "Bookstore",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "17388216"
+    },
+    "item": [{
+            "name": "Books",
+            "item": [{
+                    "name": "Books",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [{
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"username\":\"onurgoker\",\r\n    \"password\":\"123456\"\r\n}"
+                        },
+                        "url": {
+                            "raw": "localhost:8080/api/books?page=0&size=3",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "books"
+                            ],
+                            "query": [{
+                                    "key": "page",
+                                    "value": "0"
+                                },
+                                {
+                                    "key": "size",
+                                    "value": "3"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Books",
+                    "request": {
+                        "method": "POST",
+                        "header": [{
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"title\":\"Introduction to Javascript 6\"\r\n}"
+                        },
+                        "url": {
+                            "raw": "localhost:8080/api/books",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "books"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Books",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "localhost:8080/api/books/6",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "books",
+                                "6"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Books",
+                    "request": {
+                        "method": "PUT",
+                        "header": [{
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"title\":\"Introduction to Java EE\",\r\n    \"available\": false\r\n}"
+                        },
+                        "url": {
+                            "raw": "localhost:8080/api/books/1",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "books",
+                                "1"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Book",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "localhost:8080/api/books/1",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "books",
+                                "1"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Books Available",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "localhost:8080/api/books/available",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "books",
+                                "available"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Newspapers",
+            "item": [{
+                    "name": "Newspapers",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [{
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"username\":\"onurgoker\",\r\n    \"password\":\"123456\"\r\n}"
+                        },
+                        "url": {
+                            "raw": "localhost:8080/api/newspapers?page=0&size=3",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "newspapers"
+                            ],
+                            "query": [{
+                                    "key": "page",
+                                    "value": "0"
+                                },
+                                {
+                                    "key": "size",
+                                    "value": "3"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Newspapers",
+                    "request": {
+                        "method": "POST",
+                        "header": [{
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"title\":\"Milliyet\"\r\n}"
+                        },
+                        "url": {
+                            "raw": "localhost:8080/api/newspapers",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "newspapers"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Newspapers",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "localhost:8080/api/newspapers/6",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "newspapers",
+                                "6"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Newspapers",
+                    "request": {
+                        "method": "PUT",
+                        "header": [{
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"title\":\"Introduction to Java\",\r\n    \"status\": false\r\n}"
+                        },
+                        "url": {
+                            "raw": "localhost:8080/api/newspapers/1",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "newspapers",
+                                "1"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Newspapers",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "localhost:8080/api/newspapers/5",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "newspapers",
+                                "5"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Newspapers Available",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "localhost:8080/api/newspapers/available",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "newspapers",
+                                "available"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Documentaries",
+            "item": [{
+                    "name": "Documentaries",
+                    "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                    },
+                    "request": {
+                        "method": "GET",
+                        "header": [{
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"username\":\"onurgoker\",\r\n    \"password\":\"123456\"\r\n}"
+                        },
+                        "url": {
+                            "raw": "localhost:8080/api/documentaries?page=0&size=3",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "documentaries"
+                            ],
+                            "query": [{
+                                    "key": "page",
+                                    "value": "0"
+                                },
+                                {
+                                    "key": "size",
+                                    "value": "3"
+                                }
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Documentaries",
+                    "request": {
+                        "method": "POST",
+                        "header": [{
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"title\":\"How it is built?\"\r\n}"
+                        },
+                        "url": {
+                            "raw": "localhost:8080/api/documentaries",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "documentaries"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Documentaries",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "localhost:8080/api/documentaries/1",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "documentaries",
+                                "1"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Documentaries",
+                    "request": {
+                        "method": "PUT",
+                        "header": [{
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text"
+                        }],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\r\n    \"title\":\"How it is built?\",\r\n    \"status\": 0\r\n}"
+                        },
+                        "url": {
+                            "raw": "localhost:8080/api/documentaries/2",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "documentaries",
+                                "2"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Documentaries",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "localhost:8080/api/documentaries/5",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "documentaries",
+                                "5"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Documentaries Available",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "localhost:8080/api/documentaries/available",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "documentaries",
+                                "available"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Items",
+            "item": [{
+                "name": "Items",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "GET",
+                    "header": [{
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "{\r\n    \"username\":\"onurgoker\",\r\n    \"password\":\"123456\"\r\n}"
+                    },
+                    "url": {
+                        "raw": "localhost:8080/api/items?page=0&size=3&type=newspapers",
+                        "host": [
+                            "localhost"
+                        ],
+                        "port": "8080",
+                        "path": [
+                            "api",
+                            "items"
+                        ],
+                        "query": [{
+                                "key": "page",
+                                "value": "0"
+                            },
+                            {
+                                "key": "size",
+                                "value": "3"
+                            },
+                            {
+                                "key": "type",
+                                "value": "newspapers"
+                            }
+                        ]
+                    }
+                },
+                "response": []
+            }]
+        }
+    ]
+}
