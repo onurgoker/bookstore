@@ -10,7 +10,7 @@ You should setup MySQL in your localhost and set the db credentials in config/db
 Afterwards, you should create a new database with the name "bookstore" and set its default collation to UTF-8-general
 The program will automatically create its own db tables.
 
-## Execution:
+## Execution
 One can execute the application via following command:
 nodejs server.js
 
