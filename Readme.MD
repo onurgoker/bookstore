@@ -1,4 +1,4 @@
-# Developer Notes:
+# Developer Notes
 In order to execute the application, NodeJS should be installed on the system.
 Note that, you might execute the following commands in order:
 
@@ -20,7 +20,7 @@ Default Port: 8080 (can be changed in server.js)
 Authentication architecture is added only for get methods of each collection as a sample.
 Other endpoints do not need any authentication.
 
-## Sample Endpoints:
+## Sample Endpoints
 You can find the full postman collection in the repository as well.
 (bookstore.postman_collection.json)
 
